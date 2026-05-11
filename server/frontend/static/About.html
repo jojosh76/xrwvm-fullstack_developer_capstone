@@ -1,68 +1,95 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <title>À propos de nous - Best Cars</title>
+    <style>
+        .banner {
+            background-color: darkturquoise;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .card {
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+<body>
+    <div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+            <div class="container-fluid">
+                <h2 style="padding-right: 5%;">Best Cars</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: larger;" href="/">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="font-size: larger;" href="/about">À propos de nous</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: larger;" href="/contact">Nous contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+        <div class="card" style="width: 90%; max-width: 1200px; margin: auto; margin-top: 30px;">
+            <div class="banner">
+                <h1>À propos de nous</h1>
+                <p>Bienvenue chez <strong>Best Cars</strong>, le concessionnaire automobile leader en Amérique du Nord.<br>
+                Nous proposons les meilleures voitures neuves et d’occasion à des prix compétitifs.</p>
+            </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
+            <h3 style="text-align:center; margin: 30px 0;">Notre équipe</h3>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <!-- Membre 1 -->
+                <div class="card" style="width: 30%; min-width: 280px;">
+                    <img class="card-img-top" src="/static/person1.jpg" alt="Amanda Cruz">
+                    <div class="card-body">
+                        <h5>Amanda Cruz</h5>
+                        <p><strong>Directrice Générale</strong></p>
+                        <p class="card-text">Plus de 15 ans d’expérience dans l’industrie automobile. Passionnée par l’expérience client et la transparence.</p>
+                        <p><strong>amanda.cruz@bestcars.com</strong></p>
+                    </div>
+                </div>
 
+                <!-- Membre 2 -->
+                <div class="card" style="width: 30%; min-width: 280px;">
+                    <img class="card-img-top" src="/static/person2.jpg" alt="Michael Torres">
+                    <div class="card-body">
+                        <h5>Michael Torres</h5>
+                        <p><strong>Responsable des Ventes</strong></p>
+                        <p class="card-text">Expert en véhicules électriques et hybrides. Toujours à l’écoute pour trouver la voiture parfaite pour chaque client.</p>
+                        <p><strong>michael.torres@bestcars.com</strong></p>
+                    </div>
+                </div>
+
+                <!-- Membre 3 -->
+                <div class="card" style="width: 30%; min-width: 280px;">
+                    <img class="card-img-top" src="/static/person3.jpg" alt="Sophie Laurent">
+                    <div class="card-body">
+                        <h5>Sophie Laurent</h5>
+                        <p><strong>Responsable Service Après-vente</strong></p>
+                        <p class="card-text">Garantit que chaque véhicule soit entretenu avec les plus hauts standards de qualité.</p>
+                        <p><strong>sophie.laurent@bestcars.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
