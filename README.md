@@ -15,4 +15,8 @@ Built with Django, React, Node.js, MongoDB, and deployed on IBM Cloud using Kube
 - View car dealerships by state
 - User registration and authentication
 - Post and view dealer reviews
+<<<<<<< HEAD
 - Sentiment analysis on reviews
+=======
+- Sentiment analysis on reviews
+
